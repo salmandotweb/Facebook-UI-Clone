@@ -1,0 +1,335 @@
+:root{
+    --bg-color:#242526;
+    --text-color:#dee0e5;
+    --fade-color:#b0b3b8;
+}
+
+.right-section{
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    height: 95vh;
+    width: 23vw;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.right-section::-webkit-scrollbar {
+    width: .8rem;
+}
+.right-section::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+}
+.right-section:hover::-webkit-scrollbar-thumb{
+    background: #555;
+}
+/* friends request */
+.friend-request{
+    height: 16rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.friend-request-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.friend-request-header img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: .5rem;
+}
+.friend-request-header .request-name{
+    flex: 2;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.friend-request-header .request-option{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.friend-request-header .request-option:hover{
+    background-color: #3a3b3c;
+}
+.friend-request-header .request-option i{
+    font-size: 1.2rem;
+    color: #5f6263;
+}
+
+.main-request-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.main-request{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.main-request img{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+.main-request .request-person-name{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.request-person-name span:nth-child(1){
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+.request-person-name span:nth-child(2){
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.main-request span{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.request-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    border: none;
+    font-size: 1.3rem;
+    border-radius: .6rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+    color: #e4e6e6;
+}
+.btn:nth-child(1){
+    margin-right: 1rem;
+}
+.confirm-btn{
+    background-color: #2d88ff;
+}
+.delete-btn{
+    background-color: #3a3b3c;
+}
+.btn:hover{
+    opacity: .9;
+}
+.btn:active{
+    transform: scale(.98);
+}
+
+.your-pages{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    position: relative;
+}
+.your-pages::after{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #3a3b3c;
+}
+.your-pages::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #3a3b3c;
+}
+.your-pages h2{
+    color: var(--fade-color);
+    font-size: 1.5rem;
+}
+.your-pages .pages-option{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.your-pages .pages-option:hover{
+    background-color: #3a3b3c;
+}
+.your-pages .pages-option i{
+    font-size: 1.2rem;
+    color: #5f6263;
+}
+/* Contacts */
+
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.contacts-container::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #3a3b3c;
+}
+.contacts-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.contacts-header h2{
+    color: var(--fade-color);
+    font-size: 1.5rem;
+    flex: 2;
+}
+.contacts-icons{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-icons span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contacts-icons span:hover{
+   background-color: #3a3b3c;
+}
+.contacts-icons i{
+    font-size: 1.5rem;
+    color: #a8abaf;
+}
+
+.contacts-tabs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-tab{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: .7rem .5rem;
+    border-radius: .8rem;
+}
+.contact-tab:hover{
+    background-color: #3a3b3c;
+}
+.contact-tab img{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+.contact-tab h2{
+    color: var(--fade-color);
+    font-size: 1.3rem;
+}
+
+/* Group Creation */
+
+.group-conversations{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.group-conversation-header h2{
+    color: var(--fade-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.create-group{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: .6rem .5rem;
+    border-radius: .8rem;
+}
+.create-group:hover{
+    background-color: #3a3b3c;
+}
+.create-group .create-sign{
+    background-color: #303031;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.create-group .create-sign i{
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+.create-group .new-group{
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+/* New message button */
+
+.new-message{
+    background-color: #4b4c4f;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.new-message i{
+    font-size: 2rem;
+    color: #dadcdf;
+}
+
