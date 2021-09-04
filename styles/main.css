@@ -40,3 +40,95 @@ body {
 }
 
 /* Common Styles */
+
+/* media queries */
+
+
+
+@media screen and (max-width:1400px){
+  html{
+    font-size: 58%;
+  }
+}
+@media screen and (max-width:1250px){
+  html{
+    font-size: 53%;
+  }
+}
+@media screen and (max-width:1150px){
+  html{
+    font-size: 50%;
+  }
+}
+@media screen and (max-width:1050px){
+  html{
+    font-size: 45%;
+  }
+}
+@media screen and (max-width:1000px){
+  html{
+    font-size: 40%;
+  }
+}
+@media screen and (max-width:900px){
+  html{
+    font-size: 30%;
+  }
+}
+@media screen and (max-width:800px){
+  html{
+    font-size: 25%;
+  }
+}
+@media screen and (max-width:700px){
+  html{
+    font-size: 20%;
+  }
+}
+@media screen and (max-width:600px){
+  html{
+    font-size: 15%;
+  }
+}
+
+
+@media screen and (min-width:1445px){
+  html{
+    font-size: 65%;
+  }
+}
+@media screen and (min-width:1470px){
+  html{
+    font-size: 70%;
+  }
+}
+@media screen and (min-width:1600px){
+  html{
+    font-size: 75%;
+  }
+}
+@media screen and (min-width:1700px){
+  html{
+    font-size: 80%;
+  }
+}
+@media screen and (min-width:1800px){
+  html{
+    font-size: 85%;
+  }
+}
+@media screen and (min-width:1900px){
+  html{
+    font-size: 90%;
+  }
+}
+@media screen and (min-width:2000px){
+  html{
+    font-size: 95%;
+  }
+}
+@media screen and (min-width:2100px){
+  html{
+    font-size: 100%;
+  }
+}
